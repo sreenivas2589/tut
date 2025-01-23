@@ -40,6 +40,7 @@ pipeline {
             steps{
                 sh '''
                     test -f build/index.html
+                    npm install --save-dev @testing-library/react
                     npm test
                 '''
 
